@@ -21,6 +21,10 @@ Desktop.ini
 # Local user data — never commit personal criteria or evaluation history
 jd_criteria.md
 jd_history.md
+
+# …except the eval fixture, which is a synthetic profile and has to be in the
+# repo for the suite to be reproducible from a clean clone.
+!evals/fixtures/jd_criteria.md
 .openclaw/
 .claude/jd-triage/
 
