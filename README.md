@@ -128,7 +128,7 @@ cp -r claude-code ~/.claude/skills/jd-triage
 cp -r openclaw ~/.openclaw/plugin-skills/jd-triage
 ```
 
-Then `/skill enable jd-triage`, or publish with `cd openclaw && openclaw publish`.
+Then `/skill enable jd-triage`.
 
 Upgrading from an earlier version? Leave your `jd_criteria.md` alone — the skill
 detects `schema_version < 3` and migrates on next run, asking only for what it
