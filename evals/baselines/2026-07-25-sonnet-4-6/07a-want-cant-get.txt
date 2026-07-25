@@ -1,0 +1,22 @@
+Using criteria from 2026-07-25.
+
+🎯 Stretch apply          Desirability: Strong   Candidacy: Stretch
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          ★★★★★
+  Vibe         ★★★★★   positive anchor "Stroom Werkplaats" — its why: "a nine-person studio that publishes its reasoning in the open and turns down work that does not fit"
+                         triggered by: "we publish what we learn"
+                        positive anchor "Basecamp" — its why: "small team, ships deliberately, no growth theater"
+                         triggered by: "We are twenty people", "remote-first since 2019"
+  Comp         ★★★★★   €120k total / €85k current = 141%; floor €90k — clear pass on both
+  → weighted 5.0/5
+
+Can get it
+  Meets 0.5/7 stated must-haves
+  ✅ none fully            ⚠️ Kubernetes (learning — JD requires production scale)            ❌ 10+ years PM experience (have 6), 4+ years on infrastructure PM, shipped ML in production, managed team of 8+ PMs, Go or Rust, distributed-systems fundamentals
+
+The role is a perfect desirability match on all five axes — research lab shipping developer tools, remote-first, deliberately small team, strong comp lift — but its stated requirements sit four experience-years and four technical domains above your current profile.
+
+Logged: JD-20260725-001

@@ -1,0 +1,25 @@
+⚠️ CONDITIONAL — Confirm before applying     Desirability: Good   Candidacy: Likely
+
+Using criteria from 2026-07-25.
+
+Want it
+  Role fit     ★★★★☆   title matches "Product Manager"; responsibilities are core PM work (roadmap ownership, clinical user research, metrics, engineering partnership)
+  Domain       ★★★★★   "We build data tooling used by hospital research teams" — directly matches "health data"
+  Org          (info insufficient)   no signals on remote policy, ownership structure, or research-lab character from the JD
+  Vibe         ★★★☆☆   no phrases triggering either positive or negative anchor; standard professional register, small-team scope (5 engineers, 4 hospital partners), no urgency language and no manufactured-metrics framing
+  Comp         (info insufficient)   JD quotes base (€95,000); your comp floor is in total — not comparable without the full package
+  → weighted 3.93/5 (3 axes scored; Org and Comp dropped, remaining weight renormalized to 70)
+
+Can get it
+  Meets 3.0/4 stated must-haves (75% — Likely)
+  ✅ 5+ years PM (6 years vs. 5+ required)
+  ✅ SQL (mastered)
+  ✅ Strong stakeholder communication (mastered)
+  ❌ Experience with data-heavy or regulated products — not listed in skills; typically probed with questions about managing schema changes, compliance constraints, or navigating regulated-data stakeholders; any relevant exposure from current role at Meridiaan Data worth surfacing
+
+Fits if total comp (base + annual bonus + equity) is confirmed ≥ €90,000 total; cannot verify from the stated base salary alone.
+
+Open questions
+- The JD states €95,000 base plus annual bonus and equity; your comp floor is €90,000 total. Ask the recruiter: "Can you share the typical on-target total compensation range, including variable bonus and equity?" The comp gate cannot be formally cleared until the full package is known.
+
+Logged: JD-20260725-001

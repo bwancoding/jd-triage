@@ -14,9 +14,9 @@ A role you want but can't get is a *stretch*, not a *skip*. A role you can get b
 
 Responsibilities:
 
-1. **Bootstrap & maintain** a criteria profile at `~/.openclaw/workspace/jd_criteria.md`.
+1. **Bootstrap & maintain** a criteria profile at `{{WORKSPACE}}/jd_criteria.md`.
 2. **Evaluate** a JD → two-dimension verdict + one action.
-3. **Log** every evaluation to `~/.openclaw/workspace/jd_history.md`.
+3. **Log** every evaluation to `{{WORKSPACE}}/jd_history.md`.
 4. **Analyze / Plan** over accumulated history (see `references/analysis-commands.md`).
 
 ## Language
@@ -33,7 +33,7 @@ Responsibilities:
 
 ## State machine
 
-On every invocation, read `~/.openclaw/workspace/jd_criteria.md` and branch:
+On every invocation, read `{{WORKSPACE}}/jd_criteria.md` and branch:
 
 | State | Condition | Action |
 |---|---|---|
@@ -168,7 +168,7 @@ read; what the posting is missing goes under Open questions.
 
 ### 6. Log
 
-Append to `~/.openclaw/workspace/jd_history.md` — format and ID scheme in `references/history.md`. Create the file if missing.
+Append to `{{WORKSPACE}}/jd_history.md` — format and ID scheme in `references/history.md`. Create the file if missing.
 
 **The evaluation is not complete until this write succeeds.** Confirm it on the last line of the output (`Logged: JD-…`). If the write fails, say so explicitly — never let it fail silently.
 

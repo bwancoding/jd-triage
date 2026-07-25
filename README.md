@@ -1,155 +1,214 @@
 # jd-triage
 
-A career-criteria-aware Job Description triage skill that runs on two AI agent platforms.
+**v1.1.0** · A career-criteria-aware job-posting triage skill, for Claude Code and OpenClaw.
 
-Paste a JD; the skill checks it against your stored hiring criteria, applies hard gates with **responsibility-weighted** red lines, scores six soft axes on a 5-star rubric with **mandatory anchor-cited vibe judgments**, and returns a verdict in one of six tiers — including a `CONDITIONAL` state that surfaces concrete questions to ask the recruiter instead of false-OUT-ing borderline JDs.
+Paste a job posting. The skill scores it on **two independent dimensions** —
+*do you want it* and *can you get it* — and returns one action.
 
-> **Design ethos**: most JD-screening tools are keyword filters. Real screening is judgment under uncertainty. This skill makes the model's reasoning legible — every vibe rating cites a specific anchor and JD phrase, every red-line hit is located in the JD with its surrounding wording, and every unknown becomes an explicit `Open question` instead of a silent assumption.
+> **Design ethos**: most JD filters are keyword matchers that emit a single
+> score. Real screening is judgment under uncertainty about two different
+> questions, and collapsing them destroys the answer. This skill keeps them
+> apart, and makes each one inspectable: every vibe rating quotes the posting and
+> names the anchor it reasoned from, every red-line hit is located in the posting
+> with its surrounding framing, and every unknown becomes a question you can send
+> to a recruiter instead of a silent assumption.
 
 ---
 
-## Two versions, one source of truth
+## Why two dimensions
 
-| Version | Runtime | Install path | Criteria/history location |
+| | Likely | Plausible | Stretch |
 |---|---|---|---|
-| [`openclaw/`](./openclaw/) | OpenClaw + ClawdHub | `~/.openclaw/plugin-skills/jd-triage/` | `~/.openclaw/workspace/jd_criteria.md` |
-| [`claude-code/`](./claude-code/) | Claude Code | `~/.claude/skills/jd-triage/` | `~/.claude/jd-triage/jd_criteria.md` |
+| **Strong** | 🔥 Apply now | 🔥 Apply now | 🎯 Stretch apply |
+| **Good** | ✅ Apply | ✅ Apply | 🎯 Stretch apply |
+| **Weak** | 🗄️ Backup | 🗄️ Backup | ❌ Skip |
+| **Poor** | ❌ Skip | ❌ Skip | ❌ Skip |
 
-Both versions share the same evaluation logic, scoring rubric, and bootstrap flow. They differ only in:
+A single ordinal verdict cannot distinguish *"you'd love this and you're a long
+shot"* from *"you'd tolerate this and you'd walk in"* — but those two demand
+completely different behaviour from you. **Desirability** is a weighted average
+of five axes scored against your stored criteria. **Candidacy** is the hit rate
+of the posting's stated must-have requirements against your skills inventory,
+with half credit for anything you are actively learning.
 
-- **Storage paths** (each platform's convention)
-- **Publishing metadata** (OpenClaw version has `_meta.json` and a hub-facing `README.md`)
+Hard gates and red lines short-circuit before either is computed.
 
-Edits to evaluation logic should land in **both** versions.
+## What it does differently
 
----
+### Red lines are weighted by position, not matched as strings
 
-## What makes this skill different
+"Owns the revenue target" in the **title** is an instant no. The same idea in the
+**last bullet, framed as *support***, surrounded by six bullets of work you want,
+is a question for the recruiter — not a rejection.
 
-Most JD-triage prompts I've seen do roughly: *"score this JD against these keywords, return a verdict."* That produces confident-sounding nonsense. This skill enforces four hard rules that cost a few extra tokens but produce judgments you can actually act on:
-
-### 1. Responsibility-weighted red lines
-
-A keyword like `"商业化"` ("commercialization") in the **last bullet, framed as `支持` (support)**, surrounded by 6 bullets of Agent/RAG/Prompt work, is **not** the same as `"商业化"` in the **job title** or **first responsibility**. The skill applies a three-tier weight rule:
-
-| Where the red-line keyword appears | Verdict |
+| Where the matched responsibility sits | Verdict |
 |---|---|
-| In JD title, OR first 1–2 bullets, OR estimated >30% of role | **❌ OUT** (core responsibility) |
-| Only in tail bullets, framed as "支持/协助/support/assist" | **⚠️ CONDITIONAL** (proceed to soft scoring + open questions) |
-| Only in qualifications / preferred skills section | Note as open question, do not gate |
+| Title, first 1–2 bullets, or plausibly >30% of the role | ❌ **OUT** |
+| Tail bullets, framed as support / assist / partner-with | ⚠️ **CONDITIONAL** + open questions |
+| Requirements section only, not the duties | Noted, does not gate |
 
-This avoids the most common failure mode of keyword filters: false-OUT-ing JDs that are actually 80%+ aligned but mention a sensitive word once in passing.
+Matching is **semantic**, so a red line written in one language catches a posting
+written in another — and so `"growth"` does not fire on `"growth mindset"` in a
+values paragraph.
 
-### 2. Mandatory anchor citation on vibe scoring
+### Vibe anchors carry your reason, not just a name
 
-Vibe scoring is the load-bearing axis (a 1★ vibe alone can drag the verdict down a tier). To prevent the model from making up vibes by feel, every vibe rating is required to:
+`vibe_anchors_positive: ["Linear"]` only works if the model already has an
+opinion about Linear. That fails silently for a 12-person studio in your city, and
+fails *invisibly* for famous companies, where the model substitutes reputation for
+your actual taste.
 
-- Name at least one specific anchor (positive or negative) from the user's criteria file
-- Quote the exact JD phrase that triggered the comparison
+So every anchor requires a `why`:
 
-Adjective-only verdicts ("looks growth-y", "no product taste") are explicitly forbidden in the rubric. This makes vibe judgments inspectable — you can see whether the model is using your anchors or making things up.
-
-### 3. Strengths summary on OUT
-
-Even when a JD fails a hard gate, the skill outputs a `Strengths matched` section listing axes that *did* align (e.g. *"language environment matches foreign-company preference"*, *"core responsibilities hit Agent + RAG keywords"*). Skipping shouldn't waste signal — over time these strengths accumulate into a sharper sense of "what kind of company should I watch for."
-
-### 4. Open questions as first-class output
-
-When salary is unknown, location is ambiguous, or a `CONDITIONAL` is in play, the skill outputs an `Open questions` block: concrete things to ask the recruiter, in the recruiter's expected register. No silent `unknown → continue` fallthrough.
-
----
-
-## Verdict tiers
-
-| Tier | Meaning |
-|---|---|
-| ✅ **Strong Apply** | All axes ≥ 4★, no hard-gate near-miss |
-| 🎯 **Apply** | Average ≥ 3.5★, no axis below 2★, vibe ≥ 3★ |
-| ⚠️ **Conditional** | Red-line keyword in non-core responsibility, OR critical unknowns; proceed with `Open questions` |
-| ⚠️ **Caution** | Average ≥ 2.5★, OR vibe = 1–2★ |
-| ❌ **Skip** | Average < 2.5★, OR any high-weight axis = 1★ |
-| ❌ **OUT** | Hard gate failed (core-responsibility red line, salary below floor, city mismatch, lifestyle exceeds tier) |
-
----
-
-## Bootstrap & lifecycle
-
-On first run the skill walks you through three blocks of questions (Profile / Hard Gates / Soft Axes), 13 fields total, and writes them to `jd_criteria.md`. On subsequent runs:
-
-- ≤ 15 days old → use as-is
-- > 15 days old → one-line `y/n` freshness check; partial patches if anything changed
-- Schema gap → asks only the missing fields
-- Explicit `update` / `reset` → full re-bootstrap with current values pre-filled
-
-Each evaluation appends to `jd_history.md` with a `JD-YYYYMMDD-NNN` ID, the verdict, scores, and the `criteria_version` in effect at evaluation time. Compare past evaluations with `/jd-triage compare <id1> <id2>`.
-
----
-
-## Repo layout
-
+```yaml
+- name: "Linear"
+  why: "restraint — a clear product opinion, no feature-count race"
 ```
-jd-triage/
-├── README.md                 ← this file (design overview)
-├── LICENSE
-├── .gitignore
-├── openclaw/                 ← OpenClaw / ClawdHub publish target
-│   ├── SKILL.md
-│   ├── README.md             ← ClawdHub listing page
-│   ├── _meta.json
-│   ├── assets/
-│   │   └── criteria-template.yaml
-│   └── references/
-│       ├── bootstrap-questions.md
-│       ├── scoring-rubric.md
-│       └── history-format.md
-└── claude-code/             ← Claude Code version
-    ├── SKILL.md
-    ├── assets/
-    │   └── criteria-template.yaml
-    └── references/
-        ├── bootstrap-questions.md
-        ├── scoring-rubric.md
-        └── history-format.md
-```
+
+The `why` is the comparison basis. Obscure anchors now work exactly as well as
+famous ones, and the rating stays yours.
+
+### Rejections still produce signal
+
+An `OUT` verdict outputs a **Matched anyway** block naming what did align, and
+still writes a history entry. `/jd-triage analyze` reads those rows later to tell
+you which pattern keeps reaching your inbox and which requirement you keep
+almost meeting.
+
+### Unknowns become questions
+
+Missing comp, ambiguous scope, unstated remote policy: each becomes a line under
+**Open questions**, phrased so you can paste it into a reply. No silent
+`unknown → assume fine`.
+
+### Five questions to start
+
+Quick Start asks for your role family and market, your target titles and domains,
+your floors, your automatic no's, and one to three anchors with reasons. Skills,
+org traits, and negative anchors are captured **just in time** — once, at the
+moment the first evaluation actually needs them.
+
+`/jd-triage learn` skips the interview entirely: hand it a few postings you liked
+and a few you passed on, and it proposes your red lines and anchors, each with the
+evidence it came from, for you to accept or edit.
+
+---
+
+## Generality
+
+Market-, language-, and profession-neutral by construction:
+
+- **No fixed company taxonomy.** `org_traits` is a free list of traits in your own
+  words with your own weights — `"research lab with a shipping product": 5` and
+  `"private-equity owned": 1` use the same machinery.
+- **Comp is structured**, with `basis` (`base` / `total` / hourly), currency,
+  period, and conventions like 13th-month or base-plus-equity. The skill compares
+  like for like and refuses to invent an exchange rate.
+- **Intensity signals are per-language data**, not hardcoded keywords —
+  see [`src/references/intensity-signals.md`](src/references/intensity-signals.md).
+- **Seniority is never mapped across markets.** L5, P7, and Grade 6 are not
+  comparable; the skill counts stated requirements and ignores the label.
+- **English-first output**, switching to whatever language you write in. Stored
+  keys stay English so the files stay greppable; stored values keep the language
+  you wrote them in and are never retroactively translated.
 
 ---
 
 ## Install
 
-### OpenClaw
-
-```bash
-cp -r openclaw ~/.openclaw/plugin-skills/jd-triage
-```
-
-Then in OpenClaw:
-
-```
-/skill enable jd-triage
-```
-
-Or publish to ClawdHub (requires ClawdHub account configured):
-
-```bash
-cd openclaw
-openclaw publish
-```
-
-### Claude Code
+**Claude Code**
 
 ```bash
 cp -r claude-code ~/.claude/skills/jd-triage
 ```
 
-Claude Code will auto-discover the skill on next session. Trigger it with `/jd-triage` or by pasting a JD.
+**OpenClaw**
+
+```bash
+cp -r openclaw ~/.openclaw/plugin-skills/jd-triage
+```
+
+Then `/skill enable jd-triage`, or publish with `cd openclaw && openclaw publish`.
+
+Upgrading from an earlier version? Leave your `jd_criteria.md` alone — the skill
+detects `schema_version < 3` and migrates on next run, asking only for what it
+cannot infer (comp basis, one `why` per red line and anchor, and your market
+context). Ratings of `3` in the old company-type and company-size maps are
+dropped, because they never changed an outcome.
+
+---
+
+## Repo layout
+
+`src/` is the only place to edit. The two platform directories are **generated**
+and committed so they can be installed directly.
+
+```
+jd-triage/
+├── src/                            ← single source of truth
+│   ├── SKILL.md
+│   ├── assets/
+│   │   ├── criteria-template.yaml  schema v3
+│   │   └── presets/                menus offered at Quick Start, never defaults
+│   └── references/
+│       ├── bootstrap.md            quick start · learn-from-examples · full · migration
+│       ├── scoring.md              5 axes + candidacy, with worked examples
+│       ├── intensity-signals.md    per-language intensity vocabulary
+│       ├── history.md              log format, history, compare
+│       └── analysis-commands.md    analyze, plan
+├── platform/openclaw/              hub listing page + publishing metadata
+├── build.sh                        src/ → claude-code/ + openclaw/
+├── claude-code/                    generated
+└── openclaw/                       generated
+```
+
+```bash
+./build.sh          # regenerate both platform directories
+./build.sh --check  # fail if they are out of sync with src/
+```
+
+`{{WORKSPACE}}` in `src/` is substituted per platform
+(`~/.claude/jd-triage` / `~/.openclaw/workspace`). Run `./build.sh` before
+committing; `--check` is safe to wire into CI or a pre-commit hook.
 
 ---
 
 ## Status
 
-**v0.2** — `CONDITIONAL` tier, responsibility-weighted red lines, anchor-cited vibe scoring, strengths-on-OUT, open-questions-as-output. Tested with GLM 4.5 / GLM 5.1 (SiliconFlow) on OpenClaw and with Claude Sonnet on Claude Code.
+**v1.1.0** — two-dimension verdict with a Candidacy axis; generalized to any
+market, language, and profession; 5-question Quick Start with just-in-time
+capture; derive-criteria-from-examples; per-language intensity signals; structured
+comp with basis comparison; single-source build.
 
-Smaller open-source models (≤14B) are **not supported** — the skill assumes frontier-grade reasoning for responsibility weighting and anchor matching. Use `claude-sonnet-*`, `claude-opus-*`, `glm-4.5+`, `gpt-4-class`, or comparable.
+Verdict precedence is now explicit and single-valued (gate → conditional →
+matrix), replacing the overlapping tier rules of earlier versions.
+
+Needs a frontier-grade model — responsibility weighting and semantic red-line
+matching degrade badly below roughly 30B, mostly as false OUTs.
+
+### Evals
+
+[`evals/`](evals/) measures two things that need no human labelling: whether the
+same posting produces the same action across repeated runs, and whether the skill
+followed its own stated rules (vibe citations present, missing comp marked
+insufficient rather than padded, history entry written).
+
+```bash
+./evals/run.py            # 18 cases × 3 runs
+./evals/run.py --dry-run  # check the harness itself, no API calls
+```
+
+Nine of the cases are **pairs** differing in exactly one respect — a red line in
+the title vs. the same phrase in a tail support bullet, a famous vibe anchor vs. a
+fictional one, the same posting in German and English. A pair that fails to
+separate names a specific broken rule instead of a vague quality problem. See
+[`evals/README.md`](evals/README.md).
+
+**No numbers are published yet** — the harness has not been run end to end.
+Until it has, treat verdict stability as a design intent rather than a claim.
+
+What evals cannot tell you is whether the advice is *good*. That needs the
+`Outcome` field in your history, filled in over months.
 
 ---
 

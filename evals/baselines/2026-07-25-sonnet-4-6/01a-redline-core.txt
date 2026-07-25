@@ -1,0 +1,10 @@
+❌ OUT
+Triggered: red line "individual revenue quota" — responsibility bullet 1 of 5: "Own an individual revenue quota of €2M ARR for the platform line"
+Owning a quota is the primary stated duty, not a peripheral one; this role optimizes for a commercial target, not product definition.
+
+Matched anyway
+- Location: Amsterdam, within the criteria list
+- Comp: €100,000 total exceeds the €90,000 floor
+- SQL cited as a requirement — a mastered skill
+
+Logged: JD-20260725-001

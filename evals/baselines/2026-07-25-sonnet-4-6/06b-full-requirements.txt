@@ -1,0 +1,25 @@
+Using criteria from 2026-07-25.
+
+🔥 APPLY NOW          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          (info insufficient)
+  Vibe         ★★★★☆   positive anchor "Basecamp" — its why: "small team, ships deliberately, no growth theater"
+                        triggered by: "Work with three engineers and share a designer with another team", "Decide what we deprecate and communicate it well"
+  Comp         ★★★★☆   €98,000 total vs €85,000 current (115%); above the €90,000 floor
+  → weighted 4.5/5 (Org dropped; denominator 85)
+
+Can get it
+  Meets 5.5/6 stated must-haves
+  ✅ 5+ years PM (6 years)   ✅ SQL   ✅ A/B testing and experiment design   ✅ Roadmapping for a technical audience   ✅ Written stakeholder communication   ⚠️ Kubernetes and container registries (Kubernetes in progress)
+
+Developer-tools PM role at a small, intentional Amsterdam team building infrastructure for engineering teams — strong match on role, domain, vibe, and comp, with candidacy near-certain.
+
+Open questions
+- Org traits (remote-first, research-lab character, ownership structure) cannot be determined from the JD — worth a quick check before applying.
+- "Kubernetes and container registries" is one must-have scored at 0.5 (Kubernetes in progress); worth asking the recruiter how much hands-on registry work the role involves day-to-day.
+- Nice-to-haves you meet: Dutch (in your listed languages — worth signalling). Open-source communities: not in your skills.
+
+Logged: JD-20260725-001

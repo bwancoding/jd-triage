@@ -1,0 +1,10 @@
+❌ OUT
+Triggered: intensity gate — Requirements: "High tolerance for pressure and a hands-on mentality in a dynamic environment" — implies high tier; your ceiling is standard.
+This role states high-intensity tolerance as a hard requirement, which exceeds your standard ceiling.
+
+Matched anyway
+- Developer tools domain (CLI and SDK for engineering teams) hits your top target domain
+- Amsterdam clears the location gate
+- €105,000 total package clears the comp floor (€90,000)
+
+Logged: JD-20260725-001

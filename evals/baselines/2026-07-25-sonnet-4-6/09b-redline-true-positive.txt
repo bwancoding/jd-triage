@@ -1,0 +1,12 @@
+Using criteria from 2026-07-25
+
+❌ OUT
+Triggered: red line "individual revenue quota" — bullet 2 of 5 responsibilities: "Carry an individual quota of €2M ARR for self-serve conversion, reviewed monthly"
+Carrying a personal ARR target is exactly what the red line names: the job optimizes for a number, not for the product.
+
+Matched anyway
+- Title and domain: "Product Manager, Developer Tools" in Amsterdam — direct keyword and domain match (developer tools)
+- Comp: €99,000 total clears the €90,000 floor
+- Skill alignment: SQL and experiment design are stated must-haves already mastered
+
+Logged: JD-20260725-001
