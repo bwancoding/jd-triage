@@ -250,6 +250,10 @@ def score(cases, outdir, runs):
             results.append({"case": entry["case"], "run": entry["run"], "error": "no output.txt"})
             continue
         output = out_file.read_text(encoding="utf-8")
+        broken = unusable(output)
+        if broken:
+            results.append({"case": entry["case"], "run": entry["run"], "error": broken})
+            continue
         failures, action = check_rules(case, output)
         logged = (sandbox / "workspace" / "jd_history.md").exists()
         if not logged:
@@ -373,6 +377,22 @@ def extract_action(output):
     return None
 
 
+def unusable(text):
+    """Why this text is not an evaluation, or None if it looks like one.
+
+    A CLI that fails mid-flight can still exit 0 having printed something short
+    like "Execution error". Scored naively that reads as a skill that broke every
+    rule at once, which quietly turns an infrastructure problem into a quality
+    number. Infrastructure failures belong in the error column.
+    """
+    stripped = (text or "").strip()
+    if not stripped:
+        return "empty output"
+    if len(stripped) < 80 or extract_action(stripped) is None:
+        return f"unusable output ({len(stripped)} bytes): {stripped[:60]!r}"
+    return None
+
+
 def check_rules(meta, output):
     """Layer 2. Returns a list of failure strings; empty means compliant."""
     failures = []
@@ -411,6 +431,11 @@ def run_once(tmp, case, index, model, timeout):
         output = written.read_text(encoding="utf-8")
     else:
         written.write_text(output, encoding="utf-8")
+
+    broken = unusable(output)
+    if broken:
+        # Leave the file on disk to be read, but do not score it as an answer.
+        return {"case": case["id"], "run": index, "error": broken}
 
     failures, action = check_rules(case, output)
     logged = (workspace / "jd_history.md").exists()
@@ -576,11 +601,16 @@ def main():
         # Skip whatever already answered. A batch killed partway through should
         # cost only the remainder, not the whole suite again.
         before_count = len(jobs)
-        jobs = [
-            (c, i) for c, i in jobs
-            if not (tmp / f"{c['id']}-{i}" / "output.txt").exists()
-            or not (tmp / f"{c['id']}-{i}" / "output.txt").read_text(encoding="utf-8").strip()
-        ]
+
+        def needs_rerun(case, index):
+            f = tmp / f"{case['id']}-{index}" / "output.txt"
+            if not f.exists():
+                return True
+            # Same usability test as scoring, so a run that died mid-flight and
+            # left "Execution error" behind is retried rather than counted as done.
+            return unusable(f.read_text(encoding="utf-8")) is not None
+
+        jobs = [(c, i) for c, i in jobs if needs_rerun(c, i)]
         print(f"resuming: {before_count - len(jobs)} already done, {len(jobs)} to go")
         if not jobs:
             return score(cases, tmp, args.runs)
@@ -640,7 +670,10 @@ def main():
     print(f"\nresults  {shown(out)}")
     print(f"outputs  {shown(tmp)}/<case>-<run>/output.txt")
 
-    return 0 if summarize(cases, results, args.runs) else 1
+    # Score the whole directory, not just this invocation's slice. A resumed run
+    # only executes what was missing, and summarizing those alone reports every
+    # previously-finished case as absent.
+    return score(cases, tmp, args.runs)
 
 
 if __name__ == "__main__":
