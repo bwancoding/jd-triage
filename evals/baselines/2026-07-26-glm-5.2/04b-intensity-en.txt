@@ -1,0 +1,13 @@
+Using criteria from 2026-07-26
+
+❌ OUT
+Triggered: intensity_tier gate - Requirements, bullet 2 of 4: "High tolerance for pressure and a hands-on mentality in a dynamic environment". "High tolerance for pressure" maps to `high` (German "hohe Belastbarkeit", Spanish "resistencia a la presión" - both `high`); "hands-on mentality" maps to `high` (German "Hands-on-Mentalität"); "dynamic environment" maps to `high` (German "dynamisches Umfeld"). Implied tier `high` exceeds your `standard`.
+The posting asks for sustained pressure-tolerance and a hands-on mentality in a dynamic environment - a `high`-intensity ask above your `standard` ceiling, so the gate stops the evaluation before scoring.
+
+Matched anyway
+- Domain: developer tools - "Own the roadmap for our CLI and SDK products" is squarely in your target_domains
+- Role: "Senior Product Manager" matches target_title_keywords and the dev_tools_pm target role
+- Location Amsterdam is in your list; €105,000 total clears your €90,000 floor and beats current €85,000
+- SQL, experimentation, roadmapping, and communication are all mastered skills - candidacy would likely have been strong
+
+Logged: JD-20260726-001

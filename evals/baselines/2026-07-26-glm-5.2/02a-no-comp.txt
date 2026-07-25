@@ -1,0 +1,26 @@
+Using criteria from 2026-07-26
+
+⚠️ CONDITIONAL          Desirability: Strong   Candidacy: Likely
+
+Action: Confirm before applying
+
+Want it
+  Role fit     ★★★★★   "Product Manager" keyword; duties (own build/CI roadmap, interview engineers, adoption metrics) match the Developer tools PM target
+  Domain       ★★★★★   matched to "developer tools" - "We build the internal developer platform used by about 400 engineers"
+  Org          ★★★☆☆   org is described (tooling co, ~400 eng) but none of the three traits present; neutral, not a black box
+  Vibe         ★★★★☆   positive anchor "Basecamp" - its why: "small team, ships deliberately, no growth theater"
+               triggered by: "Own the roadmap for our build and CI tooling", "a team of six engineers and one designer", "Define success metrics for platform adoption and measure them"
+  Comp         (info insufficient)   no comp stated in the posting
+  -> weighted 4.35/5   (Comp dropped; 85 of 100 weight remains)
+
+Can get it
+  Meets 4/4 stated must-haves
+  ✅ 4+ yrs PM (you have 6) · SQL & log/data querying · running experiments · written comms with technical audiences
+
+Strong on every desirability axis that can be scored and a clean candidacy sweep; fits if the total package meets the €90k floor, OUT if it comes in below it.
+
+Open questions
+- What is the total compensation (base + variable) for this role? The posting states none; your floor is €90k total and current comp is €85k total. Below €90k total -> OUT.
+- Does the role include on-call rotation? The posting is silent, and on-call is a non-negotiable red line for you. If it is a core duty -> OUT.
+
+Logged: JD-20260726-001

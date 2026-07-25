@@ -1,0 +1,26 @@
+Using criteria from 2026-07-26
+
+⚠️ CONDITIONAL          Desirability: Good   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★☆   "Product Manager" title match; owns the roadmap, partners with five engineers - genuine PM substance, but the audience is clinical researchers, not the developer-tools focus of your target role
+  Domain       ★★★★★   matched to "health data" - "We build data tooling used by hospital research teams" (cohort-building for hospital research = health data)
+  Org          ★★★☆☆   assessable from the posting (health-data product shop, "four hospital partners", "team of five engineers"); none of your three org_traits confirmed present, so neutral - absence is not a rejection
+  Vibe         ★★★☆☆   anchor "Basecamp" (why: "small team, ships deliberately, no growth theater") - faint positive signal "Partner with a team of five engineers" (small team) and zero growth-theater/urgency language; the posting is brief, standard register, and reveals little, so it stays neutral rather than clearing to 4★; no match to negative anchor "Kettle Group"
+  Comp         (info insufficient)   JD quotes €82,000 base against a €90,000 total floor - bases differ, and "an annual bonus and an equity grant" are unquantified, so total comp is not comparable
+  -> weighted 3.76/5 (comp dropped; remaining weight 85)
+
+Can get it
+  Meets 4/4 stated must-haves
+  ✅ 5+ years PM (profile: 6) · data-heavy/regulated products (current PM @ Meridiaan Data) · SQL (mastered) · stakeholder communication (mastered)
+
+Fits if total comp clears the €90,000 total floor; OUT if the €82,000 base plus bonus and equity falls below it. The matrix reads Apply (Good/Likely) once the comp gate settles.
+
+Action: Confirm before applying
+
+Open questions
+- [deciding] What is the total package? The posting quotes €82,000 base plus "an annual bonus and an equity grant" with no figures. On a total basis, does base + bonus + equity meet €90,000/year?
+- No intensity signals in the posting - assumed your standard tier with no penalty; confirm hours and crunch expectations with the recruiter.
+- Amsterdam is listed but no remote/hybrid policy is stated; your remote_ok is yes so the location gate passes either way - still worth asking.
+
+Logged: JD-20260726-001

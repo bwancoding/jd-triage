@@ -1,0 +1,26 @@
+Using criteria from 2026-07-26
+
+⚠️ CONDITIONAL          Desirability: Good   Candidacy: Likely
+Action: Confirm before applying
+
+Want it
+  Role fit     ★★★★☆   "Senior Product Manager" keyword match; core bullets ("Define the roadmap for our SDK and command-line tooling", "Own the API reference and developer documentation") are the Developer tools PM work you target - the sales-support tail is what keeps it at 4, not 5
+  Domain       ★★★★☆   matched your "developer tools" by meaning to "developer-facing surface of our platform: SDKs, CLI, and docs"; the org's main business is not fully stated, so this is a role-level match, not a confirmed org-level one
+  Org          ★★★☆☆   assessable but none of your traits present: "hybrid, 2 days on site" is not remote-first; no signal of a research lab or PE ownership -> neutral, not a penalty
+  Vibe         ★★★☆☆   standard corporate register; checked Kettle Group ("manufactured urgency; metrics used as a loyalty test rather than as information") against "Support the sales team as they work toward their quota by supplying product data and occasional demo help" - that is sales enablement, not manufactured urgency or a loyalty test, so the negative anchor does not trigger; no positive anchor triggered either
+  Comp         ★★★★☆   €100,000 total package vs your €85,000 total ≈ 118% of current; bases match (total vs total, EUR), clears your €90,000 floor
+  -> weighted 3.60/5
+
+Can get it
+  Meets 3/4 stated must-haves
+  ✅ 5+ years PM (you have 6)            ✅ SQL and experiment design            ✅ strong stakeholder communication            ❌ experience with developer-facing products
+  Gap: "experience with developer-facing products" - usually probed as "tell me about a product you shipped for developers" (an API, SDK, or internal tool used by engineers). Answerable if any Meridiaan Data work touched developer users; flag it if so.
+
+Fits if the sales work is the occasional demo/data support that bullet 6 frames it as; OUT if the PM carries any revenue quota or is measured on sales attainment.
+
+Open questions
+- Does this PM carry any revenue quota or sales-attainment metric, or is "Support the sales team as they work toward their quota by supplying product data and occasional demo help" (bullet 6 of 6) purely occasional enablement? This is the red-line call - send it to the recruiter as-is.
+- What is Vaneck Systems' main business? The JD describes a developer platform but never names the end market - affects whether the domain match is org-level or only role-level.
+- Any developer-facing product in your Meridiaan Data background? Would close the one candidacy gap.
+
+Logged: JD-20260726-001

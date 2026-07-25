@@ -1,0 +1,25 @@
+Using criteria from 2026-07-26
+
+🔥 Apply now          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★★   "Product Manager, Developer Tools" owning "the roadmap for the registry and its access-control surface"
+  Domain       ★★★★★   "package registry used by around 900 engineering teams" = developer tools, your listed domain
+  Org          ★★★☆☆   no signal on research-lab / remote-first / PE-ownership; absence is neutral, not negative
+  Vibe         ★★★★☆   positive anchor "Basecamp" - why: "small team, ships deliberately, no growth theater"
+                       triggered by: "Work with three engineers and share a designer with another team", "Decide what we deprecate and communicate it well"
+  Comp         ★★★★☆   €98k total vs €85k current ≈ 115%
+  -> weighted 4.3/5
+
+Can get it
+  Meets 5.5/6 stated must-haves (92%)
+  ✅ 5+ years in PM (you have 6) · SQL · designing/reading A/B tests · roadmapping for a technical audience · written stakeholder communication
+  ⚠️ Working knowledge of Kubernetes and container registries - Kubernetes in progress (learning); container registries is the gap, usually probed hands-on (image pulls, registry auth, deprecation policy)
+  Preferred (not counted): Dutch - in your languages context; open-source communities - no evidence
+
+A developer-tools PM role at a small, deliberate company shipping a package registry to 900 engineering teams - your target role on both axes, paying ~15% above your current; confirm on-call is not part of it before you apply.
+
+Open questions
+- Does this role carry any on-call rotation for registry reliability? The posting is silent on hours and I assumed your standard tier with no penalty - but on-call is a hard red line for you, so confirm it with the recruiter before applying.
+
+Logged: JD-20260726-001

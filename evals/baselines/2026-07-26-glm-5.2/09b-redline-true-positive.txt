@@ -1,0 +1,11 @@
+Using criteria from 2026-07-26
+❌ OUT
+Triggered: red line "individual revenue quota" - matched "Carry an individual quota of €2M ARR for self-serve conversion, reviewed monthly" (responsibility bullet 2 of 5 - first 1-2 bullets, core)
+An individual €2M ARR quota reviewed monthly puts a target, not a product, at the center of the role - exactly what your red line says you do not want to own.
+
+Matched anyway
+- Domain: org builds "the API gateway and developer portal" - a direct developer-tools match against your target_domains
+- Title "Product Manager" matches your target_title_keywords
+- €99,000 total clears your €90,000 total floor (same basis, same currency)
+
+Logged: JD-20260726-001

@@ -1,0 +1,12 @@
+Using criteria from 2026-07-26
+❌ OUT
+Triggered: intensity_tier gate - Anforderungen section, bullet 2 of 4: "Hohe Belastbarkeit und Hands-on-Mentalität in einem dynamischen Umfeld"
+The requirement language sits at the `high` intensity tier - three German high-tier signals in one line ("hohe Belastbarkeit", "Hands-on-Mentalität", "dynamisches Umfeld") - which exceeds your `standard` ceiling, so the gate stops here regardless of fit.
+
+Matched anyway
+- Domain: developer tools - "Wir bauen Werkzeuge für Entwicklerteams" and CLI- und SDK-Produkte; direct hit on your "developer tools" target domain
+- Role fit: "Senior Product Manager" matches a target_title_keyword
+- Location: Amsterdam is in your locations list
+- Comp: €105.000 Gesamtpaket (total) clears your €90.000 total floor
+
+Logged: JD-20260726-001
