@@ -183,8 +183,8 @@ comp with basis comparison; single-source build.
 Verdict precedence is now explicit and single-valued (gate → conditional →
 matrix), replacing the overlapping tier rules of earlier versions.
 
-Needs a frontier-grade model — responsibility weighting and semantic red-line
-matching degrade badly below roughly 30B, mostly as false OUTs.
+Verified on GLM-5.2 and Claude Sonnet 4.6. Smaller models are untested — see
+[Evals](#evals) for what has and has not been measured.
 
 ### Evals
 
@@ -204,11 +204,40 @@ fictional one, the same posting in German and English. A pair that fails to
 separate names a specific broken rule instead of a vague quality problem. See
 [`evals/README.md`](evals/README.md).
 
-**No numbers are published yet** — the harness has not been run end to end.
-Until it has, treat verdict stability as a design intent rather than a claim.
+Measured on GLM-5.2, 18 cases × 2 runs:
 
-What evals cannot tell you is whether the advice is *good*. That needs the
-`Outcome` field in your history, filled in over months.
+```
+consistency      18/18 cases stable across 2 runs   100%
+rule compliance  36/36 runs rule-compliant          100%
+paired contrast   6/6 pairs separated correctly     100%
+```
+
+Those numbers are the *result* of running it, not the reason to trust it. The
+first pass found six specification defects — an unpinned verdict token, no
+defined action for "too thin to score", literal domain matching that scored the
+same domain differently in two postings, an undefined `org_fit` when traits were
+assessable but absent, and `CONDITIONAL` firing on unknowns that could not change
+the outcome. All are fixed; the suite exists to catch the next six.
+
+**What these numbers do not establish:**
+
+- **Whether the advice is good.** Consistency and rule-following are what is
+  measured here. Real validation needs the `Outcome` field in your history,
+  filled in over months.
+- **Anything about small models.** An earlier version of this README claimed
+  failures below ~30B. That number had no evidence behind it and is gone. What is
+  measured: GLM-5.2 and Claude Sonnet 4.6 both follow the specification, and on
+  one rule — a red line sitting in a tail support bullet — GLM-5.2 was the more
+  accurate of the two.
+- **The true instability rate.** Two runs detect disagreement but understate it;
+  three or more would be firmer.
+- **A clean cross-model comparison.** The committed Sonnet baseline was recorded
+  against the *pre-fix* specification, so it documents the starting point rather
+  than a like-for-like benchmark.
+
+100% is also only 100% *against the assertions that exist*. Reading one output by
+hand found two real defects that every mechanical check had passed. Mechanical
+assertions catch regressions; they do not replace occasionally reading the output.
 
 ---
 

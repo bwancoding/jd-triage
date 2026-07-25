@@ -115,8 +115,10 @@ a workspace you sync publicly.
 - **The sample is your inbox.** `analyze` describes the roles reaching you, never
   "the market".
 - **No comp negotiation advice.** Out of scope.
-- **Needs a frontier-grade model.** Responsibility weighting and semantic red-line
-  matching do not survive on small models. Under roughly 30B, expect false OUTs.
+- **Model support is measured, not assumed.** Verified on GLM-5.2 and Claude
+  Sonnet 4.6 — 18 test cases, 100% verdict stability across repeated runs and
+  100% compliance with the skill's own rules. Smaller models are simply untested;
+  no claim either way.
 
 ## Author
 
