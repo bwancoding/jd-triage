@@ -122,7 +122,21 @@ Market-, language-, and profession-neutral by construction:
 cp -r claude-code ~/.claude/skills/jd-triage
 ```
 
-**OpenClaw**
+**OpenClaw** — published on [ClawHub](https://clawhub.ai/bwancoding/jd-triage):
+
+```bash
+openclaw skills install @bwancoding/jd-triage
+```
+
+Or through the `skills` runner:
+
+```bash
+npx skills add https://clawhub.ai/bwancoding/skills/jd-triage
+```
+
+Or straight from this repo — copy `openclaw/`, the built directory whose paths
+are already resolved. Do **not** copy `src/`; its paths are still `{{WORKSPACE}}`
+placeholders and will point nowhere.
 
 ```bash
 cp -r openclaw ~/.openclaw/plugin-skills/jd-triage
