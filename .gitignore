@@ -1,0 +1,50 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+.claude/
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local user data — never commit personal criteria or evaluation history
+jd_criteria.md
+jd_history.md
+
+# …except the eval fixture, which is a synthetic profile and has to be in the
+# repo for the suite to be reproducible from a clean clone.
+!evals/fixtures/jd_criteria.md
+.openclaw/
+.claude/jd-triage/
+
+# Backups
+*.bak
+*.bak.*
+*.last-good
+
+# Logs
+*.log
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+api_keys.txt
+
+# Eval run artifacts — regenerate with ./evals/run.py
+evals/results/
+__pycache__/
+*.pyc

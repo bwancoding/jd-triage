@@ -1,0 +1,23 @@
+Using criteria from 2026-07-25
+
+❌ Skip          Desirability: Poor   Candidacy: Likely
+
+Want it
+  Role fit     ★★★☆☆
+  Domain       ★☆☆☆☆
+  Org          ★☆☆☆☆
+  Vibe         ★☆☆☆☆   negative anchor "Kettle Group" — its why: "manufactured urgency; metrics used as a loyalty test rather than as information"
+                         triggered by: "Every team publishes a weekly leaderboard, and where you sit on it is read out in the Monday review", "We measure everything, and we expect people to care about their position on the board"
+  Comp         ★★★★☆
+  → weighted 1.95/5 (all five axes scored; vibe ≤ 2★ caps at Weak, but average is already Poor)
+
+Can get it
+  Meets 5/5 stated must-haves
+  ✅ 5+ years PM (6 years)   ✅ SQL   ✅ A/B testing & experiment design   ✅ Roadmapping   ✅ Stakeholder communication
+
+You can do this job completely — every stated requirement is met — but the domain is insurance operations, the org is PE-portfolio with no research-lab or remote-first signal, and the culture description maps directly onto the negative anchor's stated reason for avoidance.
+
+Open questions
+- The leaderboard read-out language ("we expect people to care about their position on the board") may signal above-standard intensity. Confirm whether this role runs on standard business hours or routinely demands more before ruling it out entirely.
+
+Logged: JD-20260725-001

@@ -1,0 +1,21 @@
+Using criteria from 2026-07-26
+
+🔥 Apply now          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★★   "Senior Product Manager" keyword match; owns the forecasting product, runs discovery, prioritised roadmap, defines metrics, writes release notes - the substance matches the title
+  Domain       ★★★★★   "forecasting and settlement software for regional grid operators" = climate tech by meaning
+  Org          ★★★☆☆   assessable but neutral: hybrid 2 days on site (not remote-first), not a research lab, explicitly "independent since founding" (not PE-owned)
+  Vibe         ★★★★★   positive anchor "Basecamp" - why "small team, ships deliberately, no growth theater"; triggered by "forty-person company", "release on a six-week cycle", "independent since founding"
+  Comp         ★★★★☆   €102,000 total package vs €85,000 current = 120%
+  -> weighted 4.55/5
+
+Can get it
+  Meets 5/5 stated must-haves
+  ✅ 5+ years PM (profile: 6), SQL, experiment design & interpretation, roadmapping for a technical audience, written stakeholder communication
+  ⚠️ (none in progress on must-haves)
+  ❌ (no must-have gaps)
+
+A small, independent, deliberately-shipping climate-tech product company above your floor and current comp, with every stated must-have already in your mastered skills - a clean apply.
+
+Logged: JD-20260726-001

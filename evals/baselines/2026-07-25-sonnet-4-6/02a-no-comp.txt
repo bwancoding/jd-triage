@@ -1,0 +1,25 @@
+⚠️ Confirm before applying   Desirability: Strong   Candidacy: Likely
+
+Using criteria from 2026-07-25
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          (info insufficient)
+  Vibe         ★★★★☆   anchor "Basecamp" — "a team of six engineers and one designer"
+  Comp         (info insufficient)
+  → weighted 4.6/5 (Org and Comp dropped; renormalized over 70)
+
+Can get it
+  Meets 4/4 stated must-haves (no preferred split marked; all Requirements treated as must-have)
+  ✅ 4+ years in product management (6 years on file)
+  ✅ SQL (mastered)
+  ✅ Experience running experiments and interpreting the results (A/B testing and experiment design — mastered)
+  ✅ Clear written communication with technical audiences (stakeholder communication — mastered)
+
+Fits if total comp clears €90,000/year; OUT if it falls below the floor.
+
+Open questions
+- What is the full compensation package? The JD states no comp. Your floor is €90,000/year total — this is the only unknown standing between this and 🔥 Apply now.
+
+Logged: JD-20260725-001

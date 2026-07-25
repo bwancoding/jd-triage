@@ -1,0 +1,25 @@
+Using criteria from 2026-07-25
+
+⚠️ CONDITIONAL — Confirm before applying          Desirability: (too thin to score)   Candidacy: Unknown
+
+Want it
+  Role fit     ★★★☆☆   title matches "Product Manager" but "Work with stakeholders across the business" / "Drive outcomes and own delivery" reveal nothing about actual work or domain
+  Domain       (info insufficient) — no org or domain mentioned
+  Org          (info insufficient) — no org described
+  Vibe         ★★★☆☆   standard corporate register; no signals toward either positive anchor (deliberate shipping, publishing reasoning) or negative anchor (manufactured urgency, metrics as loyalty test) — "Drive outcomes and own delivery"
+  Comp         (info insufficient) — no comp stated
+  → 3 of 5 axes insufficient; no desirability tier (posting too thin to score)
+
+Can get it
+  0 stated must-have requirements — Candidacy Unknown (fewer than 3)
+  No preferred requirements stated either.
+
+Fits if comp is at or above €90 000/yr total and location is Amsterdam, Utrecht, or fully remote; fails both gates if not — and the posting currently reveals neither.
+
+Open questions
+1. What is the comp range, stated as total annual in EUR, to compare against the €90 000/yr floor?
+2. Is this role based in Amsterdam, Utrecht, or is it fully remote?
+3. What is the actual domain and what does the organization do?
+4. Is there a full job description with stated responsibilities and requirements? The current posting has two generic bullets and no stated requirements — candidacy cannot be scored without them.
+
+Logged: JD-20260725-001

@@ -1,0 +1,22 @@
+Using criteria from 2026-07-25
+
+✅ Apply          Desirability: Good   Candidacy: Plausible
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          ★★☆☆☆   "research lab with a shipping product" (weight 5, highest) not matched — Kwartslag is a studio, not a lab; remote-first (weight 4) and PE-owned (weight 1) not stated in JD; all traits unmatched per scoring rules
+  Vibe         ★★★★★   positive anchor "Stroom Werkplaats" — its why: "a nine-person studio that publishes its reasoning in the open and turns down work that does not fit"
+                         triggered by: "We are a nine-person studio", "We publish our design reasoning and our post-mortems in the open, including the decisions that did not work", "We turn down roughly half the work that comes to us because it does not fit what we are trying to be good at"
+               positive anchor "Basecamp" — its why: "small team, ships deliberately, no growth theater"
+                         triggered by: "nine-person studio", "Say no to feature requests, in writing, with reasons"
+  Comp         ★★★★☆   €95,000 / €85,000 current = 111.8% (110–129% → 4★); above €90,000 floor
+  → weighted 4.4/5 (org fit 2★ blocks Strong; all five axes scored)
+
+Can get it
+  Meets 2/4 stated must-haves
+  ✅ 5+ years in PM (6 years)   ✅ SQL / data analysis (SQL mastered)   ❌ Energy/climate/regulated domain experience   ❌ Willingness to have reasoning read publicly
+
+The vibe is an almost exact match to the Stroom Werkplaats anchor; the primary candidacy gap is domain experience in energy or a regulated sector, which is the harder requirement to address before applying.
+
+Logged: JD-20260725-001

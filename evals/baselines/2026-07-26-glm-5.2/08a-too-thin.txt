@@ -1,0 +1,28 @@
+Using criteria from 2026-07-26
+
+⚠️ CONDITIONAL          Desirability: (too thin to score)   Candidacy: Unknown
+
+Want it
+  Role fit     ★★★★☆   title "Product Manager" matches your keyword; the two bullets ("Work with stakeholders across the business", "Drive outcomes and own delivery") are generic PM register, no scope or seniority signal
+  Domain       (info insufficient) - no org name, no product description
+  Org          (info insufficient) - no self-description to assess traits against
+  Vibe         ★★★☆☆   neutral; standard corporate register, no anchor triggered - "Work with stakeholders across the business" / "Drive outcomes and own delivery" match neither Basecamp's "small team, ships deliberately, no growth theater" nor Stroom Werkplaats's "publishes its reasoning in the open", and only faintly brush Kettle Group's "metrics as a loyalty test" without the urgency framing
+  Comp         (info insufficient) - no comp stated
+  -> too thin to score (3 of 5 axes insufficient; no tier reported)
+
+Can get it
+  Stated must-haves: none -> Candidacy Unknown (fewer than 3 requirements)
+  ✅ -            ⚠️ -            ❌ -
+
+Intensity: no signal in the posting - assumed standard (your tier), no penalty.
+
+Action: Confirm before applying
+Too thin to score - confirm the org, domain, comp, location, and requirements; this could fit if they align, OUT if the location is outside Amsterdam/Utrecht/remote or total comp is below €90k.
+
+Open questions
+- Where is the role based, and is it remote-eligible? (Amsterdam/Utrecht or remote passes; anywhere else is OUT.)
+- What is the total comp package, base + variable? (Below €90k total is OUT.)
+- What does the org do, and what is the product/domain? (Needed to score Domain, Org, and Vibe - the posting reveals none of this.)
+- What are the actual must-have requirements? (Candidacy is Unknown with nothing stated to match against.)
+
+Logged: JD-20260726-001

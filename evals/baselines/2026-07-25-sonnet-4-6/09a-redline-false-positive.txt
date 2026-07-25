@@ -1,0 +1,19 @@
+Using criteria from 2026-07-25.
+
+🔥 APPLY NOW          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★☆   "Own the developer portal and the self-serve onboarding flow" — title and core scope match dev_tools_pm; "Partner with Revenue Operations to understand funnel data" adds a growth-analytics element outside the pure developer tooling PM brief
+  Domain       ★★★★★   "We build the API gateway and developer portal used by our platform customers" — squarely in developer tools
+  Org          — (info insufficient)   no signals on research-lab, remote-first, or ownership structure
+  Vibe         ★★★★☆   anchor "Basecamp" — "Work with five engineers and a technical writer" (small team, ships deliberately); "Maintain the public changelog" (deliberate shipping, no growth theater); anchor "Stroom Werkplaats" — "Maintain the public changelog" (publishes reasoning in the open); nothing matching "manufactured urgency" or "metrics as loyalty test"
+  Comp         ★★★★☆   €99,000 total / €85,000 current = 116.5% → 110–129% band; above €90,000 floor
+  → weighted 4.2/5 (Org dropped; denominator 85)
+
+Can get it
+  Meets 3.0/4 stated must-haves
+  ✅ 5+ years in PM (6 years)   ✅ SQL and experiment design (both mastered)   ✅ Strong written communication (stakeholder communication: mastered)   ❌ Experience with developer-facing products (not listed in skills)
+
+Strong domain match — Grondwerk builds an API gateway and developer portal, which is core developer tooling; small-team signals and a meaningful comp step up make this an easy apply.
+
+Logged: JD-20260725-001

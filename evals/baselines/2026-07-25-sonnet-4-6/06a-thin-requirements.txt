@@ -1,0 +1,21 @@
+🔥 Apply now (provisional)     Desirability: Strong   Candidacy: Unknown
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          (info insufficient)
+  Vibe         ★★★★☆   positive anchor "Basecamp" — its why: "small team, ships deliberately, no growth theater"
+                        triggered by: "three engineers and share a designer with another team", "Decide what we deprecate and communicate it well"
+  Comp         ★★★★☆
+  → weighted 4.5/5  (Org dropped; remaining weights sum to 85: role 25 + domain 20 + vibe 25 + comp 15)
+
+Can get it
+  Only 2 stated must-haves — fewer than 3 → Unknown; reading the Plausible column
+  ✅ Product management experience   ✅ Comfortable with technical products
+
+Strong fit on all four scorable axes; candidacy is Unknown because the posting states only two requirements — treating as Plausible provisionally, confirm the full requirements list before submitting.
+
+Open questions
+- The posting lists only two requirements. Ask the recruiter for the actual must-have list; the answer determines whether candidacy is Likely, Plausible, or Stretch.
+
+Logged: JD-20260725-001

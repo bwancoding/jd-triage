@@ -1,0 +1,11 @@
+❌ OUT
+Triggered: intensity_tier — "Hohe Belastbarkeit und Hands-on-Mentalität in einem dynamischen Umfeld" (Anforderungen, bullet 2); three German `high`-tier signals (hohe Belastbarkeit, Hands-on-Mentalität, dynamisches Umfeld) in a single bullet, implied tier: high > your ceiling: standard.
+JD implies a high-intensity working style; your hard gate is standard.
+
+Matched anyway
+- Developer-tools domain is a direct target: "CLI- und SDK-Produkte" matches dev_tools_pm
+- Amsterdam location clears your gate
+- Comp (€105.000 Gesamtpaket, total) clears your €90k total floor by €15k
+- SQL and experiment skills are an explicit match to two of the four stated requirements
+
+Logged: JD-20260725-001

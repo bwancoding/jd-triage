@@ -1,0 +1,24 @@
+✅ Apply          Desirability: Good   Candidacy: Plausible
+
+Using criteria from 2026-07-25
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★☆   domain inferred — requirement "Experience shipping developer-facing software" implies the product is developer-facing; stated domain not confirmed
+  Org          ★★☆☆☆   "research lab with a shipping product" (wt 5) absent; "Amsterdam or remote within the EU" does not confirm remote-first (wt 4); PE-ownership unknown (wt 1, cannot assess)
+  Vibe         ★★★★★   anchor "Basecamp" (why: small team, ships deliberately, no growth theater) — "We are eight people" + "We ship a handful of things a year and we finish them" + "We do not run growth experiments on our users, we do not have a funnel review, and we are not trying to get bigger for its own sake"; anchor "Stroom Werkplaats" (why: publishes its reasoning in the open and turns down work that does not fit) — "Decide what we do not build, and write down why"; no phrases match "Kettle Group" why (manufactured urgency; metrics as loyalty test)
+  Comp         ★★★★☆   €95,000 total = 111.8% of current €85,000 total; floor €90,000 cleared
+  → weighted 4.2/5  (Good — Strong blocked: org ★★☆☆☆ ≤ 2★; no axis = 1★)
+
+  Note: JD gives no intensity signals; assuming standard (user's tier) — no penalty.
+
+Can get it
+  Meets 2.0/4 stated must-haves (no preference split in JD; all four treated as must-have)
+  ✅ 5+ years in PM (6 years meets 5+ minimum)
+  ✅ SQL (mastered)
+  ❌ Comfortable writing long-form, in public (not in skills)
+  ❌ Experience shipping developer-facing software (not in skills)
+
+Culture and comp both clear — the two candidacy gaps (public writing and developer-facing domain experience) are concrete and addressable, not dealbreakers.
+
+Logged: JD-20260725-001

@@ -1,0 +1,23 @@
+Using criteria from 2026-07-26
+
+🔥 Apply now          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★☆
+  Domain       ★★★★★   matched to "health data" - "We build data tooling used by hospital research teams"
+  Org          ★★★☆☆   "We build data tooling used by hospital research teams" - a product vendor serving researchers, not a research lab; remote-first / PE-owned not stated
+  Vibe         ★★★★☆   positive anchor "Basecamp" - its why: "small team, ships deliberately, no growth theater"
+                       triggered by: "Partner with a team of five engineers", "Own the roadmap for our cohort-building tool"
+  Comp         ★★★★☆   €95,000 total package - 112% of current €85,000 total, clears the €90,000 total floor
+  -> weighted 4.05/5
+
+Can get it
+  Meets 4/4 stated must-haves
+  ✅ 5+ years in product management (6 years)
+  ✅ Experience with data-heavy products (current org Meridiaan Data)
+  ✅ SQL (mastered)
+  ✅ Strong stakeholder communication (mastered)
+
+Health-data PM in Amsterdam - small eng team owning a focused cohort-building tool, and the €95k is quoted as a total package on the same basis as the €90k total floor, so comp is a clean compare rather than a guess.
+
+Logged: JD-20260726-001

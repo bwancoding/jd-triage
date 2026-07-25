@@ -1,0 +1,24 @@
+Using criteria from 2026-07-26
+
+🔥 Apply now (provisional)   Desirability: Strong   Candidacy: Unknown
+
+Want it
+  Role fit     ★★★★★   "Product Manager, Developer Tools" - title matches "Product Manager" keyword; "Own the roadmap for the registry and its access-control surface" is dev-tools PM scope, matches the target role
+  Domain       ★★★★★   "package registry used by around 900 engineering teams" - a package registry is developer tooling; matched to "developer tools"
+  Org          ★★★☆☆   assessable but no listed trait present: a shipping-product company, not a research lab; no remote-first or ownership signal -> neutral
+  Vibe         ★★★★★   positive anchor "Basecamp" - why "small team, ships deliberately, no growth theater"; triggered by "Work with three engineers and share a designer with another team" and "Decide what we deprecate and communicate it well"; no negative-anchor language present
+  Comp         ★★★★☆   €98,000 total package vs €85,000 current total = 115% (110–129% band); clears the €90,000 total floor
+  -> weighted 4.55/5 (all five axes scored, weight 100)
+
+Can get it
+  Meets 2/2 stated must-haves - but the posting states only 2, below the 3 needed to score. Candidacy: Unknown.
+  ✅ "Product management experience" - 6 yrs as PM; roadmapping + stakeholder communication mastered
+  ✅ "Comfortable with technical products" - dev-tools PM target; current role at a data company; SQL mastered
+
+A dev-tools PM role at a small, deliberately-shipping package-registry company that matches your target role, domain, and Basecamp-style vibe almost exactly - the posting is too thin on requirements to score candidacy, so apply but confirm the real bar with the recruiter first.
+
+Open questions
+- What is the actual bar? The posting states only "Product management experience" and "Comfortable with technical products" - too few to score candidacy. Ask the recruiter for the real must-haves: years of experience, and whether package-management / registry / access-control (IAM) background is expected.
+- The posting is silent on hours and on remote/hybrid policy. Assumed standard intensity (your tier) and Amsterdam-based; confirm both.
+
+Logged: JD-20260726-001

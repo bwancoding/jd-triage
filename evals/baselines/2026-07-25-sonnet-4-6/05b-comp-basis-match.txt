@@ -1,0 +1,24 @@
+🔥 APPLY NOW          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★☆   "Product Manager, Platform" matches keyword directly; roadmap ownership and researcher collaboration are substantively PM work
+  Domain       ★★★★★   "We build data tooling used by hospital research teams" — health data, the org's main business is in the list
+  Org          (info insufficient)   no org-trait signals available from the JD; dropped from the weighted average
+  Vibe         ★★★★☆   positive anchor "Basecamp" — why: "small team, ships deliberately, no growth theater"
+                         triggered by: "team of five engineers", "Work with clinical researchers to understand their questions", "four hospital partners"
+  Comp         ★★★★☆   €95,000 total / €85,000 current = 111.8% → 4★ (110–129% range); above the €90,000 floor
+  → weighted 4.2/5 (org dropped; renormalized over 85 weight points)
+
+  No intensity signals in the JD; assumed standard, no penalty.
+
+Can get it
+  Requirements section has no must-have/preferred split; treated all four as must-have.
+  Meets 3.0/4 stated must-haves (75%)
+  ✅ 5+ years PM experience — profile: 6 years
+  ✅ SQL (mastered)
+  ✅ Strong stakeholder communication (mastered)
+  ❌ Experience with data-heavy or regulated products — not in skills list; typically probed with examples of navigating data-quality constraints or compliance requirements in a shipping product
+
+Highly aligned on domain, comp, and three of four requirements; the one interview preparation item is demonstrating data-heavy or regulated product experience.
+
+Logged: JD-20260725-001

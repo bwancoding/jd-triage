@@ -1,0 +1,24 @@
+Using criteria from 2026-07-26
+
+🔥 Apply now          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          ★★★☆☆
+  Vibe         ★★★★☆   anchor "Basecamp" (why: "small team, ships deliberately, no growth theater") - "Work daily with a team of six engineers and one designer", "Own the roadmap for our build and CI tooling", "Define success metrics for platform adoption and measure them"
+  Comp         ★★★★☆
+  -> weighted 4.3/5
+
+Can get it
+  Meets 4/4 stated must-haves
+  ✅ 4+ yrs PM (have 6)            ✅ SQL & logs            ✅ Experiments            ✅ Written comms w/ tech audiences
+
+Dev-tools PM owning the build/CI roadmap at a seven-person internal platform team in Utrecht - squarely your target role, and every stated requirement is already in your hands; the posting is just silent on on-call (your red line) and on remote policy.
+
+Open questions
+- On-call: posting doesn't say whether the platform team carries a rotation - this is your non-negotiable red line; confirm before applying.
+- Remote/hybrid: Utrecht is listed, no remote policy stated - confirm flexibility if it matters to you.
+- Intensity: no signal in the posting (Netherlands market) - assumed standard (your tier), no penalty.
+
+Logged: JD-20260726-001

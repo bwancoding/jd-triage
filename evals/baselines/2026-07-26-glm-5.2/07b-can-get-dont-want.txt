@@ -1,0 +1,19 @@
+Using criteria from 2026-07-26
+❌ Skip          Desirability: Poor   Candidacy: Likely
+
+Want it
+  Role fit     ★★★☆☆   title matches "Product Manager", but the work is ops-facing claims automation (throughput, handling time, "operational audience"), not the engineer-facing tooling you target
+  Domain       ★☆☆☆☆   motor-insurance claims is a clean miss against developer tools / climate tech / health data
+  Org          ★☆☆☆☆   "a Thornbury Capital portfolio company" matches your private-equity-owned trait (weight 1); no research-lab or remote-first signal
+  Vibe         ★☆☆☆☆   negative anchor "Kettle Group" - its why: "manufactured urgency; metrics used as a loyalty test rather than as information"
+                        triggered by: "where you sit on it is read out in the Monday review", "we expect people to care about their position on the board"
+  Comp         ★★★★☆   €95,000 total package ≈ 112% of your €85,000 current total, above the €90,000 floor (like for like: total vs total)
+  -> weighted 1.95/5
+
+Can get it
+  Meets 5/5 stated must-haves (100%)
+  ✅ 5+ years in product management (you have 6), SQL, A/B test design and reading, roadmapping, stakeholder communication
+
+You meet every stated must-have, but the opening paragraph is a textbook match to your "metrics as a loyalty test" negative anchor and motor-insurance claims is a clean miss against your target domains - a role you can clearly get and firmly don't want, so a skip rather than a backup.
+
+Logged: JD-20260726-001

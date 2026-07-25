@@ -1,0 +1,19 @@
+Using criteria from 2026-07-25.
+
+🔥 Apply now          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          (info insufficient)
+  Vibe         ★★★★☆   anchor "Basecamp" — "a team of six engineers and one designer"; "Interview engineers and turn findings into a prioritised backlog"
+  Comp         ★★★★☆
+  → weighted 4.5/5 (org fit dropped; renormalized over 85)
+
+Can get it
+  Meets 4/4 stated must-haves
+  ✅ 4+ years PM (6 on file)   ✅ SQL (mastered)   ✅ Experiment design / A/B testing (mastered)   ✅ Technical written communication (stakeholder communication, mastered)
+
+Developer tools PM on a small team in Utrecht, comp €105k total — 24% above current, all four stated must-haves met outright.
+
+Logged: JD-20260725-001

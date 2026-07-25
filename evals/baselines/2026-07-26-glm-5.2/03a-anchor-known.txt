@@ -1,0 +1,23 @@
+Using criteria from 2026-07-26
+
+🔥 Apply now          Desirability: Strong   Candidacy: Plausible
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          ★★★★☆
+  Vibe         ★★★★★   anchor "Basecamp" - its why "small team, ships deliberately, no growth theater" met by "We are eight people", "we ship a handful of things a year and we finish them", "We do not run growth experiments on our users, we do not have a funnel review, and we are not trying to get bigger for its own sake"; anchor "Stroom Werkplaats" - its why "a nine-person studio that publishes its reasoning in the open and turns down work that does not fit" met by "Decide what we do not build, and write down why", "Comfortable writing long-form, in public"
+  Comp         ★★★★☆
+  -> weighted 4.7/5
+
+Can get it
+  Meets 2/4 stated must-haves
+  ✅ 5+ years in product management (you have 6)            ✅ SQL (mastered)
+  ❌ long-form writing in public            ❌ experience shipping developer-facing software
+
+An eight-person profitable studio that explicitly rejects growth theater matches your Basecamp and Stroom Werkplaats anchors near line-for-line; the two candidacy gaps - public long-form writing and shipped developer-facing software - are what the application has to evidence.
+
+Open questions
+- The posting is silent on hours and on-call. On-call is a non-negotiable red line for you (health) - confirm with the recruiter there's no on-call rotation before you invest time.
+
+Logged: JD-20260726-001

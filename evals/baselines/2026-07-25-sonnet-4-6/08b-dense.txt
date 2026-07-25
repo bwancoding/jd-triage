@@ -1,0 +1,29 @@
+🗄️ BACKUP          Desirability: Weak   Candidacy: Likely
+
+Using criteria from 2026-07-25
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★☆☆☆   no match to listed domains ("developer tools", "climate tech", "health data") —
+                        "forecasting and settlement software for regional grid operators"
+  Org          ★☆☆☆☆   no listed trait confirmed: "hybrid, 2 days on site" (not remote-first);
+                        no research-lab signal; "We have been independent since founding" (not PE-owned)
+  Vibe         ★★★★☆   positive anchor "Basecamp" — its why: "small team, ships deliberately, no growth theater"
+                        triggered by: "forty-person company", "six-week cycle", "independent since founding"
+  Comp         ★★★★☆   €102,000 total = 120% of current €85,000 total — in the 110–129% band
+  → weighted 3.4/5  (5×25 + 2×20 + 1×15 + 4×25 + 4×15) / 100
+
+Can get it
+  Meets 5/5 stated must-haves
+  ✅ 5+ years PM (6 years on profile — within one year of the stated minimum)
+  ✅ SQL (mastered)
+  ✅ Experiment design and interpretation (mastered as "A/B testing and experiment design")
+  ✅ Roadmapping for a technical audience (mastered)
+  ✅ Strong written stakeholder communication (mastered)
+
+  Preferred requirements: Dutch ✅ (listed in your languages — worth raising at interview);
+                          energy-sector experience ❌
+
+A role you can almost certainly land, but domain and org fit drag desirability to Weak: the energy grid space sits outside your three target domains, and none of the org traits—remote-first, research lab, PE-owned—are visible in this posting.
+
+Logged: JD-20260725-001

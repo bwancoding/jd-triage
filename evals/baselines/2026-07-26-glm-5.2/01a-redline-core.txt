@@ -1,0 +1,12 @@
+Using criteria from 2026-07-26
+
+❌ OUT
+Triggered: red line "individual revenue quota" - matched in responsibility bullet 1 of 5: "Own an individual revenue quota of €2M ARR for the platform line"; reinforced by the title "Senior Product Manager, Revenue" and the opener "You will own the commercial performance of our developer platform". Core, not support.
+A revenue-carrying PM seat optimizes for the number, not the product - exactly the trade your red line exists to refuse.
+
+Matched anyway
+- Domain: "developer platform" matches your target domain "developer tools" - a dev-tools PM seat poisoned by the quota.
+- Title "Senior Product Manager" matches a target keyword; comp €100,000 total clears your €90,000 floor and your current €85,000.
+- Requirements you'd meet cold: SQL (mastered), stakeholder communication (mastered); 5+ years vs your 6.
+
+Logged: JD-20260726-001

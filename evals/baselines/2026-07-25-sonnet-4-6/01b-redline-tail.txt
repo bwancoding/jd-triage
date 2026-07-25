@@ -1,0 +1,20 @@
+🔥 Apply now          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★☆
+  Org          (info insufficient)
+  Vibe         ★★★☆☆   positive anchor "Basecamp" — "own the developer-facing surface of our platform: SDKs, CLI, and docs" (deliberate, scoped ownership; resonates with "ships deliberately, no growth theater"); mild counter-signal: "Support the sales team as they work toward their quota" (faint Kettle Group echo — quota language, though it is the sales team's number, not this PM's)
+  Comp         ★★★★☆
+  → weighted 4.0/5 (org dropped; denominator renormalized to 85)
+
+Can get it
+  Meets 3.0/4 stated must-haves (75%)
+  ✅ 5+ years in product management   ✅ SQL and experiment design   ✅ Strong stakeholder communication   ❌ Experience with developer-facing products
+
+Closest role match you have seen — Senior PM for SDK, CLI, and docs in Amsterdam with an 18% comp uplift; the one candidacy gap is developer-facing product experience, which is absent from your listed skills and will likely be the first interview screen.
+
+Open questions
+- Bullet 6 of 6 reads "Support the sales team as they work toward their quota by supplying product data and occasional demo help." How much of the actual week does this represent? If "occasional" is accurate, no concern; if this role is expected to behave as pre-sales support, that changes what the job optimizes for. Worth asking the recruiter before the first round.
+
+Logged: JD-20260725-001

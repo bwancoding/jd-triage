@@ -1,0 +1,21 @@
+🔥 Apply now          Desirability: Strong   Candidacy: Likely
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          ★★★☆☆
+  Vibe         ★★★☆☆   anchor "Basecamp" - "Work with five engineers and a technical writer"; stays neutral: "funnel data and where developers drop off" is analytics-as-info, not the "Kettle Group" loyalty-test pattern
+  Comp         ★★★★☆
+  -> weighted 4.05/5
+
+Can get it
+  Meets 3/4 stated must-haves
+  ✅ 5+ years in PM (you have 6); SQL + experiment design; written communication (via stakeholder communication)
+  ❌ Experience with developer-facing products - no direct evidence in inventory; usually probed with "walk me through a product you shipped for a technical audience"
+
+A developer-tools PM owning a real portal and changelog at a small Amsterdam team, paying above your floor and your current comp - apply, and frame the one gap (direct developer-facing products experience) in the interview.
+
+Open questions
+- I read "Partner with Revenue Operations to understand funnel data and where developers drop off" as an analytics partnership, not an individual revenue quota - it does not trigger your red line. It sits in bullet 2 of 5, so if you treat any revenue-adjacent PM work as off-limits this would flip to OUT; tell me if so.
+
+Logged: JD-20260726-001

@@ -1,0 +1,27 @@
+Using criteria from 2026-07-26
+🎯 Stretch apply          Desirability: Strong   Candidacy: Stretch
+
+Want it
+  Role fit     ★★★★☆   title "Principal Product Manager, Developer Platform" matches keyword "Product Manager"; bullets "Own the platform roadmap end to end" + "Work directly with the runtime and compiler teams" are dev-tools-PM substance, but "Principal" sits a level above your listed keywords (PM / Senior PM / Product Lead)
+  Domain       ★★★★★   "an inference runtime that about 200 engineering teams depend on" -> developer tools (main business is in your list)
+  Org          ★★★★★   trait "research lab with a shipping product" (w5) matched by "research lab with a product in production"; trait "remote-first" (w4) matched by "remote-first since 2019"; "private-equity owned" (w1) not in evidence - absent, not present
+  Vibe         ★★★★★   positive anchor "Basecamp" - its why: "small team, ships deliberately, no growth theater" - triggered by "We are twenty people", "a product in production"; positive anchor "Stroom Werkplaats" - its why: "a nine-person studio that publishes its reasoning in the open" - triggered by "we publish what we learn", "Represent the product in public writing and at conferences"; no negative-anchor signals
+  Comp         ★★★★★   €120,000 total package vs €85,000 current = 141% (≥130%)
+  -> weighted 4.75/5
+
+Can get it
+  Meets 0.5/6 stated must-haves
+  ⚠️ Kubernetes at production scale (in progress - learning)
+  ❌ 10+ years in PM, at least 4 on infrastructure (you have 6)
+  ❌ Have shipped machine-learning systems in production
+  ❌ Have managed a team of 8 or more product managers
+  ❌ Working knowledge of Go or Rust
+  ❌ Solid distributed-systems fundamentals
+
+A role you want a lot and can't get yet - desirability is near-maximal (small research lab, ships, publishes openly, 41% comp lift), but the must-haves are deep infra/ML/systems requirements that sit mostly outside your current inventory; Kubernetes is the only one in motion, and the seniority bar (10+ yrs, 8+ PMs managed) is structural.
+
+Open questions
+- The posting is silent on on-call. Infra/runtime roles often carry a rotation, and on-call is one of your red lines - confirm with the recruiter before investing time. If it does rotate, this flips to OUT.
+- "Principal" with "10+ years" and "managed a team of 8 or more PMs" reads as a hard seniority bar; ask whether they'd scope the role at a senior level given your dev-tools PM trajectory, or whether it is strictly principal-level.
+
+Logged: JD-20260726-001

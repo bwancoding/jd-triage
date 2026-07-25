@@ -1,6 +1,6 @@
 # jd_criteria.md — schema v3
 #
-# Written to ~/.openclaw/workspace/jd_criteria.md by the jd-triage skill.
+# Written to {{WORKSPACE}}/jd_criteria.md by the jd-triage skill.
 # Field keys are English and machine-readable. Values are in whatever language
 # you wrote them in, and are never auto-translated.
 #

@@ -1,0 +1,27 @@
+Using criteria from 2026-07-26
+
+🔥 Apply now          Desirability: Strong   Candidacy: Plausible
+
+Want it
+  Role fit     ★★★★★
+  Domain       ★★★★★
+  Org          ★★★☆☆
+  Vibe         ★★★★★   positive anchor "Stroom Werkplaats" - its why: "a nine-person studio that publishes its reasoning in the open and turns down work that does not fit"
+                       triggered by: "nine-person studio", "publish our design reasoning and our post-mortems in the open", "turn down roughly half the work that comes to us because it does not fit what we are trying to be good at"
+                       (also matches "Basecamp" - small team, ships deliberately, no growth theater - via "Say no to feature requests, in writing, with reasons")
+  Comp         ★★★★☆
+  -> weighted 4.55/5
+
+Can get it
+  Meets 2/4 stated must-haves
+  ✅ 5+ years in product management (profile: 6 years)
+  ✅ Comfort with data analysis - SQL at minimum (SQL mastered)
+  ❌ Experience in energy, climate, or another regulated technical domain - no evidence in profile
+  Note: "Willingness to have your reasoning read by strangers" is a disposition, not a skill - aligned with your criteria (you anchor on open-reasoning orgs), so not a gap, but not skills-credentialed either.
+
+A near-perfect vibe and domain match for an open-reasoning climate-tech studio; the one real question is whether your background touches a regulated technical domain.
+
+Open questions
+- Does your current or past work (Meridiaan Data or earlier) count as "energy, climate, or another regulated technical domain"? If yes, candidacy moves toward Likely; if the role needs energy-sector knowledge you don't have, that is the one thing that could turn this into a stretch.
+
+Logged: JD-20260726-001
