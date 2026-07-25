@@ -1,0 +1,44 @@
+name: check
+
+# Everything here is offline and free. The eval suite itself is deliberately not
+# run in CI: it needs model credentials and real API calls, so it stays a manual
+# step (./evals/run.py) whose results are committed under evals/baselines/.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generated platform directories match src/
+        # src/ is the only place to edit. claude-code/ and openclaw/ are build
+        # output, and a hand edit there looks like an ordinary file change until
+        # the next ./build.sh silently overwrites it. This is the guard.
+        run: ./build.sh --check
+
+      - name: Eval harness compiles and its sandbox builds
+        run: |
+          python3 -m py_compile evals/run.py
+          python3 evals/run.py --dry-run
+
+      - name: Every eval case parses
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+          spec = importlib.util.spec_from_file_location("r", "evals/run.py")
+          m = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(m)
+          cases = m.load_cases(None)
+          print(f"{len(cases)} cases parsed")
+          missing = [c["id"] for c in cases if not c.get("body")]
+          if missing:
+              raise SystemExit(f"cases with no posting body: {missing}")
+          PY
+
+      - name: Publishing metadata is valid JSON
+        run: python3 -m json.tool platform/openclaw/_meta.json > /dev/null
