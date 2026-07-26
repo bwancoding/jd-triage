@@ -12,12 +12,10 @@
 *~
 .cursor/
 
-# .claude/ holds local state (worktrees, settings.local.json) plus two things
-# that belong in the repo: the task queue and the commands that drive it.
-# A parent directory cannot be un-ignored, so exclude the contents, not the dir.
-.claude/*
-!.claude/commands/
-!.claude/tasks/
+# Local agent state: worktrees, settings.local.json, and the task queue that
+# drives development. Working process, not part of the skill — CLAUDE.md at the
+# repo root carries the parts a contributor actually needs.
+.claude/
 
 # OS junk
 Thumbs.db
