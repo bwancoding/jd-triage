@@ -72,6 +72,17 @@ Sandboxes persist under `evals/results/run-<timestamp>/`. Nothing is ever
 discarded on failure — if a number looks wrong, read `<case>/output.txt` before
 theorising.
 
+## Picking up work
+
+Queued tasks live in `.claude/tasks/`, lowest number first; finished ones move to
+`.claude/tasks/done/` and stay there as a build log. Run `/next` to take the
+oldest one — it reads the task, applies this file's constraints, runs the task's
+own acceptance commands, and files it away when they pass.
+
+Each task states its own boundary and acceptance. Those are the contract: work
+outside the boundary, or a green report with a red command in it, is a failed
+task even if the code is good.
+
 ## Where judgement is required, stop
 
 These are not for a coding pass to decide alone. Raise them instead:

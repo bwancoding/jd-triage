@@ -11,7 +11,13 @@
 *.swo
 *~
 .cursor/
-.claude/
+
+# .claude/ holds local state (worktrees, settings.local.json) plus two things
+# that belong in the repo: the task queue and the commands that drive it.
+# A parent directory cannot be un-ignored, so exclude the contents, not the dir.
+.claude/*
+!.claude/commands/
+!.claude/tasks/
 
 # OS junk
 Thumbs.db
