@@ -25,7 +25,7 @@ Responsibilities:
 
 | Surface | Language |
 |---|---|
-| All conversational output — bootstrap Q&A, verdicts, tables | User's language (English by default) |
+| All conversational output — bootstrap Q&A, verdicts, tables, **and the verdict tier as displayed** | User's language (English by default) |
 | `jd_criteria.md` field keys, `jd_history.md` structural labels, verdict tier names **in storage** | **Always English** — grep-friendly, stable across language switches |
 | Stored free-text values (org names, summaries, red-line rationales, JD quotes) | The language the user wrote them in, at write time |
 
@@ -174,18 +174,29 @@ Append to `~/.openclaw/workspace/jd_history.md` — format and ID scheme in `ref
 
 ### 7. Output
 
-The first line is the verdict line, and it is **parsed** — by `history`, by
-`compare`, by anything reading the log later. Write the tier token exactly as
-spelled below, in that casing, and never substitute the action wording for it:
+Two surfaces, two rules. Do not let the second one leak into the first.
+
+**On screen — the user's language.** Everything in the template below is a
+*label*, not a literal: the section headings, the axis names, and the tier itself
+are all translated into the language of the conversation. Keep the **shape** —
+line order, star glyphs, arrows, emoji, the `<k>/<n>` figures. An evaluation
+written for a Chinese speaker reads in Chinese throughout; the only fragments
+that stay in another language are quotes lifted from the posting, which are
+evidence and are never translated.
+
+**In `jd_history.md` — always English.** The stored `Action` field carries the
+tier token exactly as spelled here, in this casing, because `history` and
+`compare` parse it:
 
 `Apply now` · `Apply` · `Stretch apply` · `Backup` · `Skip` · `OUT` · `CONDITIONAL`
 
-So a conditional verdict opens `⚠️ CONDITIONAL`, never `⚠️ Confirm before applying`
-— the latter belongs on the Action line inside the body. Do not uppercase, retitle,
-or decorate the token.
+Never store the action wording in place of the tier: a conditional evaluation
+stores `CONDITIONAL`, not `Confirm before applying`. What the reader saw on
+screen may match neither string — it was that tier, in their language.
 
 If the criteria were reused rather than collected, put `Using criteria from <date>`
-on its own line **above** the verdict line, never below or inside it.
+on its own line **above** the verdict line, never below or inside it — translated
+like everything else on screen.
 
 ```
 <emoji> <TIER>          Desirability: <tier>   Candidacy: <tier>
@@ -234,6 +245,10 @@ The "Matched anyway" block exists so that rejections still accumulate signal abo
 - **Never pre-fill from training data.** Criteria values come only from the user. Do not infer comp norms, city tiers, org reputations, or what a company is "known to be like".
 - **Reason from the user's `why`, not from fame.** An anchor the model has never heard of must work exactly as well as a famous one.
 - **Red lines are weighted, not literal**, and semantic, not substring.
+- **The output template is a shape, not a script.** Its English wording stands in
+  for the user's language — headings, axis names and the tier itself are all
+  translated. Only two things resist translation: values stored in
+  `jd_history.md`, and quotes taken from the posting.
 - **Keep the two dimensions apart.** Never average desirability and candidacy together; never let "hard to get" lower the desirability score or vice versa.
 - **Open questions are output, not internal state.** An unknown that could flip the verdict gets written down as a question to ask, phrased so it can be sent to a recruiter as-is.
 - **One JD at a time.** Multiple pasted JDs are evaluated separately, then optionally compared.
