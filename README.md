@@ -1,6 +1,6 @@
 # jd-triage
 
-**v1.1.0** · A career-criteria-aware job-posting triage skill, for Claude Code and OpenClaw.
+**v1.1.1** · A career-criteria-aware job-posting triage skill, for Claude Code and OpenClaw.
 
 Paste a job posting. The skill scores it on **two independent dimensions** —
 *do you want it* and *can you get it* — and returns one action.
@@ -188,6 +188,13 @@ committing; `--check` is safe to wire into CI or a pre-commit hook.
 ---
 
 ## Status
+
+**v1.1.1** — fixes a language leak: a Chinese posting in a Chinese conversation
+came back mostly in English. Two sections of the spec disagreed about which
+surface the English tier token belongs to. It belongs to `jd_history.md`, which
+`history` and `compare` parse; the screen takes the reader's language, tier
+included. Quotes lifted from a posting still never translate — a translated quote
+is not evidence.
 
 **v1.1.0** — two-dimension verdict with a Candidacy axis; generalized to any
 market, language, and profession; 5-question Quick Start with just-in-time

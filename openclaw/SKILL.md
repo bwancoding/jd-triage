@@ -3,7 +3,7 @@ name: jd-triage
 description: "Career decision system for job seekers. Scores a job description on two independent dimensions — how much you want it (5 weighted axes against your stored criteria) and how likely you are to get it (your skills vs the JD's stated requirements) — then returns one concrete action. Use when (1) the user pastes a job description or recruiter message, (2) the user invokes /jd-triage or asks 'should I apply for this role', (3) the user asks to list, compare, or analyze previously evaluated roles, (4) the user asks what to learn next for a target role, (5) the user asks to set up, update, or reset their career criteria. Market-, language-, and profession-neutral; bootstraps a criteria profile on first run."
 ---
 
-# jd-triage · v1.1.0
+# jd-triage · v1.1.1
 
 A JD is evaluated on **two independent dimensions**, never collapsed into one number:
 
